@@ -13,11 +13,11 @@ ACCESS_KEY = "1457323725305614337-C8EF4XYtxnu3QcZPsDUMicJrlTq7ve"
 ACCESS_SECRET = "yiAEDNzl1AXh0uKKVip9rCM2wVgnVtr7bcvBYbYyHukFR"
 
 
-#client = tweepy.Client(consumer_key= CONSUMER_KEY,consumer_secret= CONSUMER_SECRET,access_token= ACCESS_KEY,access_token_secret= ACCESS_SECRET)
+client = tweepy.Client(consumer_key= CONSUMER_KEY,consumer_secret= CONSUMER_SECRET,access_token= ACCESS_KEY,access_token_secret= ACCESS_SECRET)
     
-auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
-api = tweepy.API(auth)
+#auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+#auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
+#api = tweepy.API(auth)
  
 #CONSUMER_KEY = settings.ENV['CONSUMER_KEY']
 #CONSUMER_SECRET = settings.ENV['CONSUMER_SECRET']
@@ -30,9 +30,9 @@ api = tweepy.API(auth)
 #api = tweepy.API(auth)
 
 #try:
-   # api.verify_credentials()
-   # print("Authentication Successful")
+ #  api.verify_credentials()
+  # print("Authentication Successful")
 #except:
- #   print("Authentication Error").
+ #  print("Authentication Error")
     
-api.update_status(get_random_conselho())
+#api.update_status(get_random_conselho())
